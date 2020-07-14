@@ -1,2 +1,2 @@
-# eslint-script
+# Eslint-script
 Eslint Config Files
