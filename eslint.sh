@@ -4,10 +4,10 @@ npm uninstall tslint
 rm tslint.json
 
 echo "INSTALLING ESLINT 6.8.0"
-npm install eslint@6.8.0 -D
+npm install eslint@latest -D
 
 echo "INSTALLING ESLINT DEPENDENCIES"
-npm install @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.21.2 @typescript-eslint/parser@latest -D
+npm install @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@latest @typescript-eslint/parser@latest -D
 
 echo "INSTALLING PRETTIER AND DEPENDENCIES"
 npm install prettier eslint-config-prettier eslint-plugin-prettier -D
@@ -18,7 +18,7 @@ npm install eslint-import-resolver-typescript -D
 echo "GETTING ESLINT CONFIG"
 path=${PWD}
 echo $path
-cd ../eslint-configure-script/
+cd ../eslint-script/
 
 cp files/.editorconfig $path
 
